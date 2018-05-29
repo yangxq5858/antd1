@@ -23,16 +23,15 @@
         <li nz-submenu>
           <span title><i class="anticon anticon-user"></i><span class="nav-text">用户管理</span></span>
           <ul>
-            <li nz-menu-item>用户列表</li>
+            <li nz-menu-item ><a routerLink="/user/list" routerLinkActive="active">用户列表</a></li>
             <li nz-menu-item>vip用户</li>
-            
           </ul>
         </li>
         <li nz-submenu>
           <span title><i class="anticon anticon-team"></i><span class="nav-text">产品</span></span>
           <ul>
-            <li nz-menu-item>Team 1</li>
-            <li nz-menu-item>Team 2</li>
+            <li nz-menu-item>产品列表</li>
+            <li nz-menu-item>产品分类</li>
           </ul>
         </li>
         <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">商店</span></span></li>
@@ -57,11 +56,14 @@
       </nz-header>
       <nz-content style="margin:0 16px;">
         <nz-breadcrumb style="margin:16px 0;">
-          <nz-breadcrumb-item>User</nz-breadcrumb-item>
+          <nz-breadcrumb-item >User</nz-breadcrumb-item>
           <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
         </nz-breadcrumb>
-        <div style="padding:24px; background: #fff; min-height: 360px;">
-          Bill is a cat.
+        <div style="padding:2px; background: #fff; min-height: 440px;">
+          
+
+          <router-outlet></router-outlet>
+
         </div>
       </nz-content>
       <nz-footer style="text-align: center;">Ant Design ©2017 Implement By Angular</nz-footer>
